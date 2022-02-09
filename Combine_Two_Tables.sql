@@ -1,4 +1,4 @@
-#Source: https://leetcode.com/problems/combine-two-tables/
+/* #Source: https://leetcode.com/problems/combine-two-tables/
 # Table: Person
 
 # +-------------+---------+
@@ -65,14 +65,13 @@
 
 
 
-#MY SOLUTION
-
-/*
 Approach
 -Since we are returning columns from two diferrent tables, we are going to join the tables.
 -All records in person table must be returned even if they have no matching personid in Address table.
 -So, we use the left outer join
 -where the the person table is the left table.
+
+SOLUTION
 */
 
 select firstName,lastName,city,state from Person
